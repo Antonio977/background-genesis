@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Background Genesis
+Comment=Wallpaper generator with logo overlay (centered + bottom-left)
+Exec=python3 /usr/share/background-genesis/qutec_sfondi_gui.py %f
+Icon=preferences-desktop-wallpaper
+Categories=Graphics;Photography;
+Terminal=false
+MimeType=image/jpeg;image/png;image/webp;
