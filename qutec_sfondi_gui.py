@@ -440,9 +440,11 @@ class MainWindow(QMainWindow):
             f"Font: {font_file} · testo «{p['text']}» · "
             f"centro W={p['center_w']:.3f} H={p['center_h']:.3f} Y={p['center_y']:+.3f} · "
             f"basso W={p['corner_w']:.3f} H={p['corner_h']:.3f}")
+        self.open_folder()
         QMessageBox.information(
             self, "Sfondi creati",
-            "\n".join(f"• {m.name}" for m in made))
+            "\n".join(f"• {m.name}" for m in made)
+            + f"\n\nCartella aperta nel gestore file:\n{made[0].parent}")
 
     def open_folder(self):
         outs = getattr(self, "_last_outputs", [])
