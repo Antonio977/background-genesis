@@ -35,9 +35,12 @@ python3 qutec_sfondi_gui.py [photo.jpg]
 ```
 
 Pick a photo with **Browse**, adjust text, font, color and sizes while watching
-the live preview, then press **Generate**. A `.desktop` file
-(`background-genesis.desktop`, installed under `/usr/share/background-genesis/`)
-is included for launching from the Plasma menu or via *Open With* in Dolphin.
+the live preview, then press **Generate**. The output folder opens automatically
+in the default file manager, and the confirmation dialog lists the created files.
+
+Run `./"add to app.sh"` to add Background Genesis to the Plasma application
+menu (no root needed). A portable `background-genesis.desktop` template is also
+included for system-wide packaging and *Open With* in Dolphin.
 
 ### Command line
 
